@@ -1,6 +1,6 @@
 /*
 Nombre del archivo: Examen 2
-DescripciÛn: Este es un juego que simula el juego del ahorcado, en donde la palabra esta definida por el programador y el usuario debe de encontrar la palabra letra por letra...
+Descripci√≥n: Este es un juego que simula el juego del ahorcado, en donde la palabra esta definida por el programador y el usuario debe de encontrar la palabra letra por letra...
 Autor: Jesus Axel Sanchez Montoy
 Fecha: 10 de abril del 2025
 */
@@ -26,30 +26,30 @@ using namespace std;
 
 // ======================================
 #ifdef _WIN32
-    // CÛdigos CP437 de la consola de Windows
+    // C√≥digos CP437 de la consola de Windows
     enum {AMAYU = 181, EMAYU = 144, IMAYU = 214, OMAYU = 224, UMAY = 233};
     enum {Amin = 160, Emin = 130, Imin = 161, Omin = 162, Umin = 163};
     #define CHR(x) ((char)(x))   // en Windows se sigue casteando a char
     #define INV_EXCL "\255"
 #else
     // Para terminal Linux
-    #define AMAYU "¡"
-    #define EMAYU "…"
-    #define IMAYU "Õ"
-    #define OMAYU "”"
-    #define UMAY  "⁄"
-    #define Amin  "·"
-    #define Emin  "È"
-    #define Imin  "Ì"
-    #define Omin  "Û"
-    #define Umin  "˙"
+    #define AMAYU "√Å"
+    #define EMAYU "√â"
+    #define IMAYU "√ç"
+    #define OMAYU "√ì"
+    #define UMAY  "√ö"
+    #define Amin  "√°"
+    #define Emin  "√©"
+    #define Imin  "√≠"
+    #define Omin  "√≥"
+    #define Umin  "√∫"
     #define CHR(x) (x)
-    #define INV_EXCL "°"
+    #define INV_EXCL "¬°"
 #endif
 // ======================================
 
 // ======================================
-// FunciÛn auxiliar para dormir la terminal por milisegundos
+// Funci√≥n auxiliar para dormir la terminal por milisegundos
 void EsperarMs(int ms)
 {
     #ifdef _WIN32
