@@ -4,7 +4,7 @@
 
 bool EstaLaLetra(char letra[], char palabra[])
 {
-    for(int i = 0 ; palabra[i] != '\0' ; ++i){ //Comprobamos si letra[0] esta en palabra[i]
+    for(int i = 0 ; palabra[i] != '\0' ; ++i){ //Comprueba si letra[0] esta en palabra[i]
         if(palabra[i] == letra[0]){
             return true;
         }
@@ -25,11 +25,11 @@ void UpdateProgress(char cadena[], char* cubierto, char letra[])
 
 void LimpiarPantalla()
 {
-    for(int i = 18 ; i < 120 ; ++i){ //Limpia Escribe una letra:
+    for(int i = 18 ; i < 120 ; ++i){ // Limpia Escribe una letra:
         MoverCursor(i, 4);
         std::cout << " ";
     }
-    for(int i = 0 ; i < 8 ; ++i){ //Limpia Tu letra: #
+    for(int i = 0 ; i < 8 ; ++i){ //L impia Tu letra: #
         MoverCursor(i, 6);
         std::cout << " ";
     }
@@ -37,7 +37,7 @@ void LimpiarPantalla()
         MoverCursor(i, 7);
         std::cout << " ";
     }
-    for(int i = 0 ; i < 40 ; ++i){ //Limpia el system pause
+    for(int i = 0 ; i < 40 ; ++i){ //L impia el system pause
         MoverCursor(i, 9);
         std::cout << " ";
     }
